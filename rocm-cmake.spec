@@ -7,7 +7,7 @@
 
 Name:     rocm-cmake
 Version:  %{rocm_version}
-Release:  %autorelease
+Release:  1
 Summary:  CMake modules for common build and dev tasks within the ROCm project
 License:  MIT
 URL:      https://github.com/radeonopencompute/rocm-cmake
