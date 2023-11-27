@@ -2,7 +2,7 @@
 %global debug_package %{nil}
 
 %global rocm_release 5.7
-%global rocm_patch 0
+%global rocm_patch 1
 %global rocm_version %{rocm_release}.%{rocm_patch}
 
 Name:     rocm-cmake
@@ -25,18 +25,15 @@ the libraries that comprise the ROCm platform.
 rocm-cmake is not required for building libraries or programs that use ROCm; it
 is required for building some of the libraries that are a part of ROCm.
 
-
 %prep
-%autosetup -n rocm-cmake-rocm-%{version}
-
+%autosetup -n rocm-cmake-rocm-%{version} -p1
 
 %build
 %cmake
-%cmake_build
-
+%make_build
 
 %install
-%cmake_install
+%make_install -C build
 
 rm %{buildroot}/%{_docdir}/rocm-cmake/LICENSE
 
