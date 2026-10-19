@@ -1,11 +1,11 @@
 Name:		rocm-cmake
-Version:	10.0.0
+Version:	10.1.0
 Release:	1
 Summary:	CMake modules for working with ROCm
 License:	MIT
 Group:		Development/Tools
 URL:		https://github.com/ROCm/rocm-cmake
-Source0:	https://github.com/ROCm/rocm-cmake/archive/refs/tags/therock-10.0.tar.gz#/rocm-cmake-therock-10.0.tar.gz
+Source0:	https://github.com/ROCm/rocm-cmake/archive/refs/tags/therock-10.1.tar.gz#/rocm-cmake-therock-10.1.tar.gz
 BuildArch:	noarch
 
 BuildSystem:	cmake
